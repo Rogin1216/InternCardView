@@ -1,100 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardElevation="3dp"
-    app:cardCornerRadius="2dp"
-    app:cardUseCompatPadding="true" >
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/name_list"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/linear_layout"
-        android:orientation="vertical" >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/name_list"
-            android:text="Name"
-            android:textSize="22sp"
-            android:fontFamily="@font/muli_semibold"
-            android:padding="16dp"
-            android:textColor="@android:color/black"/>
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/expandable_layout" >
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/muli_semibold"
+        android:text="Name"
+        android:textSize="24sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/current_address"
-                android:text="Address"
-                android:padding="16dp"
-                android:textSize="18sp"
-                android:fontFamily="@font/muli_extralight"
-                android:textColor="@android:color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/origin_address"
-                android:text="Date Harvested"
-                android:layout_alignParentRight="true"
-                android:padding="16dp"
-                android:textSize="18sp"
-                android:fontFamily="@font/muli_extralight"
-                android:textColor="@android:color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/current_address"
-                android:id="@+id/gender"
-                android:text="Gender"
-                android:padding="16dp"
-                android:textSize="18sp"
-                android:fontFamily="@font/muli_extralight"
-                android:textColor="@android:color/black" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/origin_address"
-                android:id="@+id/fnumber"
-                android:text="Phone number"
-                android:layout_alignParentRight="true"
-                android:padding="16dp"
-                android:textSize="18sp"
-                android:fontFamily="@font/muli_extralight"
-                android:textColor="@android:color/black" />
-
-            <Button
-                android:id="@+id/crop_sold_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/gender"
-                android:layout_marginLeft="100dp"
-                android:text="Sold"
-                android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:fontFamily="@font/muli_semibold"
-                android:background="@android:color/transparent"/>
-
-            <Button
-                android:id="@+id/crop_ship_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/fnumber"
-                android:layout_marginLeft="225dp"
-                android:text="Ship"
-                android:textColor="@android:color/black"
-                android:textSize="16sp"
-                android:fontFamily="@font/muli_semibold"
-                android:background="@android:color/transparent"/>
-
-            </RelativeLayout>
-        </LinearLayout>
-</androidx.cardview.widget.CardView>
+</LinearLayout>

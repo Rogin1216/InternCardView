@@ -55,8 +55,8 @@ public class AddDialog extends AppCompatDialogFragment {
 
                         final FirebaseDatabase database = FirebaseDatabase.getInstance();
                         DatabaseReference myRef = database.getReference("Users");
-                        Crops addCrops = new Crops(crop_name, crop_price, crop_volume, planted_date, harvested_date);
-                        myRef.child("Crops").setValue(addCrops);
+                       // Crops addCrops = new Crops(crop_name, crop_price, crop_volume, planted_date, harvested_date);
+                        //myRef.child("Crops").setValue(addCrops);
 
 
                     }

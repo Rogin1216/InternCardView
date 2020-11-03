@@ -1,21 +1,26 @@
 package com.test.interncardview.Database;
 
 public class Crops {
-    private String crop_name, crop_price, crop_volume, date_planted, date_harvested;
+
+
+    private String name ,crop_name, crop_price, crop_volume, date_planted, date_harvested;
     private boolean expandable;
 
     public Crops() {
     }
 
-    public Crops(String crop_name, String crop_price, String crop_volume, String date_planted, String date_harvested) {
+    public Crops(String crop_name, String crop_price, String crop_volume, String date_planted, String date_harvested, String name) {
         this.crop_name = crop_name;
         this.crop_price = crop_price;
         this.crop_volume = crop_volume;
         this.date_planted = date_planted;
         this.date_harvested = date_harvested;
+        this.name = name;
         this.expandable = false;
     }
-
+    public void setName(String name) {
+        this.name = name;
+    }
     public boolean isExpandable() {
         return expandable;
     }

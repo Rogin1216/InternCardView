@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-    private CardView memberCard, cropCard, priceCard;
+    private CardView memberCard, cropCard, priceCard,sample;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         memberCard.setOnClickListener(this);
         cropCard.setOnClickListener(this);
         priceCard.setOnClickListener(this);
+
     }
 
     @Override

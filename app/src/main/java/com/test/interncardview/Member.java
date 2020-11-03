@@ -12,16 +12,19 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import com.test.interncardview.Adapter.MyViewHolder;
 import com.test.interncardview.Adapter.MyViewHolderMember;
 import com.test.interncardview.Database.MemberList;
+import com.test.interncardview.Database.PriceList;
+
+import java.util.List;
 
 
 public class Member extends AppCompatActivity {
     DatabaseReference ref;
     private FirebaseRecyclerOptions<MemberList> options;
-    private RecyclerView recyclerView;
+    RecyclerView recyclerView;
     MyViewHolderMember adapter;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +40,9 @@ public class Member extends AppCompatActivity {
 
         adapter = new MyViewHolderMember(options);
         recyclerView.setAdapter(adapter);
+
     }
+
     @Override
     protected void onStart() {
         super.onStart();

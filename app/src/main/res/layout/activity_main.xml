@@ -151,9 +151,8 @@
                     android:padding="5dp"
                     android:textColor="@color/cardview_dark_background"/>
             </LinearLayout>
-
-
         </androidx.cardview.widget.CardView>
+
     </GridLayout>
 
 
